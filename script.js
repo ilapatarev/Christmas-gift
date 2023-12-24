@@ -70,7 +70,7 @@ function finished(event) {
     const currentQuestion = document.getElementById(`q${digit}`);
     currentQuestion.style.display='none'
     answerBtn.style.display='none'
-
+    }
 function continued(event) {
     if (event) {
         event.preventDefault;
@@ -79,10 +79,5 @@ function continued(event) {
     finishBtn.style.display='block'
     answerBtn.style.display='none'
     continueBtn.style.display='none'
-
-
-    
-    
-    
-}
+    }
 
