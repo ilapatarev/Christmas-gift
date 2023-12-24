@@ -15,10 +15,12 @@ const advent=document.getElementById('advent');
 const resultSection = document.getElementById('result-section');
 const nextBtn=document.getElementById('next-btn');
 const answerBtn = document.getElementById('answer-btn');
+const continueBtn = document.getElementById('continue-btn');
 
 nextBtn.addEventListener('click', showQuestion);
 answerBtn.addEventListener('click', checkAnswer);
 finishBtn.addEventListener('click', finished);
+continueBtn.addEventListener('click', continued);
 
 function showQuestion(event) {
     if (event) {
@@ -68,6 +70,15 @@ function finished(event) {
     const currentQuestion = document.getElementById(`q${digit}`);
     currentQuestion.style.display='none'
     answerBtn.style.display='none'
+
+function continued(event) {
+    if (event) {
+        event.preventDefault;
+    }
+    
+    finishBtn.style.display='block'
+    answerBtn.style.display='none'
+    continueBtn.style.display='none'
 
 
     
